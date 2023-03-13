@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        main{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr [col-start]);
+        }
+        .list_box{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            border-right: 1px solid black;
+            padding: 1rem;
+        }
+        .list_box:last-child{
+            border-right:none;
+        }
+        .list_box p{
+            font-size: 1.3rem;
+            margin: 6px 0;
+            text-transform: capitalize;
+            cursor: pointer;
+            font-weight: 600;
+            font-family: sans-serif;
+        }
+        .buy_btn{
+            display: flex;
+            justify-content: center;
+            padding: 1rem;
+            font-size: 1rem;
+            color: #fff;
+            background: cornflowerblue;
+            border-radius: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+            margin: 10px 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        #congrat_box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-family: sans-serif;
+            color: forestgreen;
+            font-size: 1.4rem;
+        }
+    </style>
+</head>
+<body>
+
+<main>
+    <div class="list_box" id="category">
+
+    </div>
+    <div class="list_box" id="subcategory">
+
+    </div>
+    <div class="list_box" id="product">
+
+    </div>
+</main>
+<div id="congrat_box">
+
+</div>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
